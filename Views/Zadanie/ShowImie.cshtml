@@ -1,0 +1,17 @@
+﻿@model Lab3_test4.Models.ZadanieModel
+@{
+    ViewData["Title"] = "Zadanie-ShowImie";
+}
+
+<div class="text-left">
+    <h1 class="display-4">Wynik</h1>
+  
+    <br />
+    @{
+    for(int i=1; i <= @Model.Ilosc_Powtorzen; i++)
+    {
+         <p>@Model.Name</p>
+    }
+ } 
+
+</div>
